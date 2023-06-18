@@ -1,0 +1,46 @@
+html, body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: greenyellow;
+}
+
+
+.my-theme {
+    font-family: "Courier New", Courier, monospace;
+    background-color: #111;
+    line-height: 1.2em;
+    font-size: 1em;
+    /* Hack to hide the real caret */
+    color: transparent;
+    text-shadow: 0 0 0 #ddd;
+}
+
+.my-theme .content {
+    padding: 15px 15px 0 15px;
+}
+
+.my-theme .prompt {
+    padding: 0 15px 15px 15px;
+}
+
+.my-theme .content ul {
+    margin: 0;
+}
+
+.my-theme .content ul li {
+    list-style-type: none;
+}
+
+.my-theme .loading span::after {
+    content: "ā™";
+    color: #ddd;
+    font-size: 10em;
+    border-radius: 10em;
+    opacity: 0.4;
+}
